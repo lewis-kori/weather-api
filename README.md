@@ -38,7 +38,7 @@ use <https://djecrety.ir/> to generate a secret key.
 This project uses data from a [public weather api](https://www.weatherapi.com/). Kindly generate an api key
 from their dashboard and set it in the `.env` file. In case you're having trouble, contact me to set this up.
 
-make a HTTP request to this endpoint
+make a HTTP get request to this endpoint
 
    /api/locations/{city}/?days={number_of_days}
 
