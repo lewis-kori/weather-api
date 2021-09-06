@@ -24,10 +24,10 @@ def get_min_temperature(forecast_list: list) -> float:
 def get_average_temperature(forecast_list: list) -> float:
     average_temperature_list = [forecast.get("avgtemp_c") for forecast in forecast_list]
     total_average_temperature = sum(average_temperature_list)
-    average_temperature_list = round(
+    average_temperature = round(
         total_average_temperature / len(average_temperature_list), 2
     )
-    return average_temperature_list
+    return average_temperature
 
 
 def get_median_temperature(forecast_list: list) -> Any:
